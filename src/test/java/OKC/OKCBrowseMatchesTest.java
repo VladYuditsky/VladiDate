@@ -78,30 +78,29 @@ public class OKCBrowseMatchesTest {
 				try {
 					vladi.explicitWaitForElement(loc.okcLikeButton, 10);
 					vladi.clickButton(loc.okcLikeButton);
-
-
-				// wait for compose message to come up
-				vladi.explicitWaitForElement(loc.okcMessageTextArea, 10);
-				vladi.enterText(loc.okcMessageTextArea, messages.get(utils.getRandomNumberInRange(0, 4)));
-				vladi.clickButton(By.xpath("//span[text()='Send']"));
-				// wait for success message
-				vladi.explicitWaitForElement(loc.okcSuccessMessageSent, 10);
-				alreadySent.add("'"+okcUserList.get(i).toString()+"'");
-				System.out.println("Successfully sent message to: " + okcUserList.get(i).toString());
-				System.out.println("Added user to the list of messaged users...");
-				System.out.println("The updated user list is: \n" + alreadySent + "\n");
-				vladi.goBackUrl();
-
+					
+					// wait for compose message to come up
+					vladi.explicitWaitForElement(loc.okcMessageTextArea, 10);
+					vladi.enterText(loc.okcMessageTextArea, messages.get(utils.getRandomNumberInRange(0, 4)));
+					vladi.clickButton(By.xpath("//span[text()='Send']"));
+					// wait for success message
+					vladi.explicitWaitForElement(loc.okcSuccessMessageSent, 10);
+					alreadySent.add("'"+okcUserList.get(i).toString()+"'");
+					System.out.println("Successfully sent message to: " + okcUserList.get(i).toString());
+					System.out.println("Added user to the list of messaged users...");
+					System.out.println("The updated user list is: \n" + alreadySent + "\n");
+					vladi.goBackUrl();
 				} catch (Exception e) {
 
 					// already liked user
-					/*
 					vladi.explicitWaitForElement(loc.okcMessageUserButton, 10);
 					vladi.clickButton(loc.okcMessageUserButton);
-					*/
 					vladi.goBackUrl();
+					// go back to matches screen
 				}
-				
+
+
+
 			} else {
 
 				System.out.println("Already sent message to: " + okcUserList.get(i).toString());
