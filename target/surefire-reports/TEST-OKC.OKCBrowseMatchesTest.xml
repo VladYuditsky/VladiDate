@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="POF.POFMeetMeTest" time="10.548" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="OKC.OKCBrowseMatchesTest" time="77.66" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,13 +60,86 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="pofMeetMe" classname="POF.POFMeetMeTest" time="10.533">
-    <error message="For input string: &quot;${swipe}&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: "${swipe}"
-	at POF.POFMeetMeTest.pofMeetMe(POFMeetMeTest.java:45)
+  <testcase name="OKCBrowseMatches" classname="OKC.OKCBrowseMatchesTest" time="77.645">
+    <error message="Expected condition failed: waiting for visibility of element located by By.xpath: //textarea[@class=&apos;messenger-composer&apos;] (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //textarea[@class='messenger-composer'] (tried for 15 second(s) with 500 milliseconds interval)
+	at OKC.OKCBrowseMatchesTest.OKCBrowseMatches(OKCBrowseMatchesTest.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//textarea[@class='messenger-composer']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-6JO9612', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\andre\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55452}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 9996093c891b21892c0d2e3a6ccf3cac
+*** Element info: {Using=xpath, value=//textarea[@class='messenger-composer']}
+	at OKC.OKCBrowseMatchesTest.OKCBrowseMatches(OKCBrowseMatchesTest.java:89)
 </error>
-    <system-err><![CDATA[Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 15547
+    <system-out><![CDATA[Found these users on OkCupid Matches...[Renee, 27, Kayla, 25, TA, 28, Jaz, 27, Janea, 25, Anna, 26, Simone, 28, Blk, 30, Julia, 26, Öyínn, 26, Monica, 34, Bridgette, 35, London, 25, Ash, 30, Ogo, 35, Shelby, 25, Randi, 31, Jasmine, 29, Caitlin, 29, Ebonie, 30]
+Clicked on: Renee
+Successfully sent message to: Renee, 27
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27']
+
+Clicked on: Kayla
+Successfully sent message to: Kayla, 25
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25']
+
+Clicked on: TA
+Successfully sent message to: TA, 28
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25', 'TA, 28']
+
+Clicked on: Jaz
+Successfully sent message to: Jaz, 27
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25', 'TA, 28', 'Jaz, 27']
+
+Clicked on: Janea
+Successfully sent message to: Janea, 25
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25', 'TA, 28', 'Jaz, 27', 'Janea, 25']
+
+Clicked on: Anna
+Successfully sent message to: Anna, 26
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25', 'TA, 28', 'Jaz, 27', 'Janea, 25', 'Anna, 26']
+
+Clicked on: Simone
+Successfully sent message to: Simone, 28
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25', 'TA, 28', 'Jaz, 27', 'Janea, 25', 'Anna, 26', 'Simone, 28']
+
+Clicked on: Blk
+Successfully sent message to: Blk, 30
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25', 'TA, 28', 'Jaz, 27', 'Janea, 25', 'Anna, 26', 'Simone, 28', 'Blk, 30']
+
+Clicked on: Julia
+Successfully sent message to: Julia, 26
+Added user to the list of messaged users...
+The updated user list is: 
+[test, 'Ashley, 25', 'Emily, 19', 'Destiny, 20', 'Jessica, 24', 'Olivia, 23', 'Amber, 26', 'Michelle, 24', 'Kelcey, 26', 'Cashara, 18', 'Kristy, 21', 'CJ, 18', 'DeShawna, 22', 'Espeon, 20', 'Renee, 27', 'Kayla, 25', 'TA, 28', 'Jaz, 27', 'Janea, 25', 'Anna, 26', 'Simone, 28', 'Blk, 30', 'Julia, 26']
+
+Clicked on: Öyínn
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.base.BaseTest).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 2197
 Only local connections are allowed.
-Jan 19, 2019 2:36:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 19, 2019 2:34:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
   </testcase>
