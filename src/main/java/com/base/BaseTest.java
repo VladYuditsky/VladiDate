@@ -37,7 +37,7 @@ public class BaseTest extends BasePage {
 		case "chrome":
 			log.info("Initializing Chrome WebDriver...");
 			try {
-				System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 				// headless condition
 				if (headless) {
 					ChromeOptions options = new ChromeOptions();
