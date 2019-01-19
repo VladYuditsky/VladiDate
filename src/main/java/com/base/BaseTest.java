@@ -45,7 +45,10 @@ public class BaseTest extends BasePage {
 							"--ignore-certificate-errors", "--silent");
 					driver = new ChromeDriver(options);
 				} else {
-					driver = new ChromeDriver();
+					//ChromeOptions options = new ChromeOptions();
+					//options.addArguments("--kiosk");
+					//driver = new ChromeDriver(options);
+					driver=new ChromeDriver();
 				}
 
 				log.log(Level.INFO, "Opening " + app + " on Chrome...");				
