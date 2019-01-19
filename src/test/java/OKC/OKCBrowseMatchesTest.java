@@ -78,7 +78,12 @@ public class OKCBrowseMatchesTest {
 				try {
 					vladi.explicitWaitForElement(loc.okcLikeButton, 10);
 					vladi.clickButton(loc.okcLikeButton);
+				} catch (Exception e) {
 
+					// already liked user
+					vladi.explicitWaitForElement(loc.okcMessageUserButton, 10);
+					vladi.clickButton(loc.okcMessageUserButton);
+				}
 
 				// wait for compose message to come up
 				vladi.explicitWaitForElement(loc.okcMessageTextArea, 10);
@@ -92,16 +97,6 @@ public class OKCBrowseMatchesTest {
 				System.out.println("The updated user list is: \n" + alreadySent + "\n");
 				vladi.goBackUrl();
 
-				} catch (Exception e) {
-
-					// already liked user
-					/*
-					vladi.explicitWaitForElement(loc.okcMessageUserButton, 10);
-					vladi.clickButton(loc.okcMessageUserButton);
-					*/
-					vladi.goBackUrl();
-				}
-				
 			} else {
 
 				System.out.println("Already sent message to: " + okcUserList.get(i).toString());
