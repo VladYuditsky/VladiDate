@@ -96,7 +96,7 @@ public class OKCBrowseMatchesTest {
 					vladi.explicitWaitForElement(loc.okcMessageUserButton, 10);
 					vladi.clickButton(loc.okcMessageUserButton);
 					vladi.goBackUrl();
-					// go back to matches screen
+
 				}
 
 
